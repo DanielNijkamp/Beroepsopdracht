@@ -1,5 +1,7 @@
 #naam van de individu die de programma opent
 
+import os
+
 print("Hello You, ik ben Daniel")
 print("wie ben jij?")
 
@@ -25,6 +27,7 @@ print("Kies A, B of C >>>>>>")
 
 answer = input()
     
+
 #Antwoorden Vraag 1
 
 if answer == "A":
@@ -43,58 +46,123 @@ if answer == "C":
 #Vraag 2
 
 else:
-  print("                                                               ")
-  print("---------------------------------------------------------------")
-  print("Hoe oud ben ik?(hoe oud ik ben in 2020)")
-
-print(" Kies 15, 16 of 17")
+    print("                                                               ")
+    print("---------------------------------------------------------------")
+    print("Hoe oud ben ik?(hoe oud ik ben in 2020)")
+    print(" Kies 15, 16 of 17")
 
 answer = input()
 
 #Antwoorden Vraag 2
 
+
 if answer == "15":
     print("                                                               ")
     print("Fout! ben iets ouder.")
 
-if answer == "16":
+elif answer == "16":
     print("                                                               ")
     print("helemaal goed")
 
-if answer == "17":
+elif answer == "17":
     print("                                                               ")
     print("Fout! ben niet zo oud")
 
 #Vraag 3
 
-else:
-   print("                                                             ")
-   print("-------------------------------------------------------------")
-   print("Wat is mijn nationalitiet?")
-   print("Kies Turks, Arabisch of Russisch")
+else:  
+    print("                                                             ")
+    print("-------------------------------------------------------------")
+    print("Wat is mijn nationalitiet?                                   ")
+    print("Kies Turks, Arabisch of Russisch                             ")
 
-answer = input()
 
 #Antwoorden Vraag 3
 
-if answer == "Turks": 
+answer = input()
+if answer == "Turks":
     print("                                                               ")
     print("Fout! Veel mensen zeggen dat ik turks lijk maar ik ben niet turks")
 
-if answer == "Arabisch": 
+elif answer == "Arabisch": 
     print("                                                               ")
     print("Fout!")
 
-if answer == "Russisch":
+elif answer == "Russisch":
     print("                                                               ")
     print("Goed! хорошо! ik ben russisch")
 
-#Einde van Script
+else:
+    print("                                                                  ")
+    print("------------------------------------------------------------------")
+    print("Ok dan nu nog een vraag. Welke opleiding heb ik gekozen op het MA?")
+    print("                                                                  ")
 
-print("                                                                 ")
-print("-----------------------------------------------------------------")
-print("nou dat was het denk ik, doei!")
+
+#Vraag 4 Flowchart
+
+print("                                                                  ")
+print("------------------------------------------------------------------")
+print("Ok dan nu nog een vraag. Welke opleiding heb ik gekozen op het MA?")
+print("Kies uit Software of Game development  [TYPE [software] OF [game] ")
+
+
+anwser1 = input()
+if anwser1 == software:
+     print("                                                                  ")
+     print("-----------------------------------------------------------------")
+     print("Ok dus wat voor developer ben ik? Front-end of back-end?         ")
+     print("TYPE [front] OF [back]                                           ")
+
+
+     answer2 = input()
+elif anwser2 == front:
+    print("Fout!, ik ben front end Gamedeveloper")
+
+elif answer2 == back:
+    print("Fout!, ik ben front end Gamedeveloper")
+
+
+if anwser1 == Game:
+     print("                                                                  ")
+     print("-----------------------------------------------------------------")
+     print("Ok dus wat voor developer ben ik? Front-end of back-end?         ")
+     print("TYPE [front] OF [back]                                           ")
+
+     anwser3 = input()
+
+elif anwser3 == front:
+     print("Goed!, ik ben front end Gamedeveloper")
 
 
 
-       
+elif anwser3 == back:
+     print("Fout!, ik ben front end Gamedeveloper")
+   
+
+else:
+     print("                                                                  ")
+     print("-----------------------------------------------------------------")
+     print("Nou dat was het, doei!                                           ")
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
