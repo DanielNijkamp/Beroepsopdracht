@@ -70,11 +70,11 @@ elif answer == "17":
 
 #Vraag 3
 
-else:  
-    print("                                                             ")
-    print("-------------------------------------------------------------")
-    print("Wat is mijn nationalitiet?                                   ")
-    print("Kies Turks, Arabisch of Russisch                             ")
+    
+print("                                                             ")
+print("-------------------------------------------------------------")
+print("Wat is mijn nationalitiet?                                   ")
+print("Kies Turks, Arabisch of Russisch                             ")
 
 
 #Antwoorden Vraag 3
@@ -92,59 +92,43 @@ elif answer == "Russisch":
     print("                                                               ")
     print("Goed! хорошо! ik ben russisch")
 
-else:
-    print("                                                                  ")
-    print("------------------------------------------------------------------")
-    print("Ok dan nu nog een vraag. Welke opleiding heb ik gekozen op het MA?")
-    print("                                                                  ")
-
-
 #Vraag 4 Flowchart
 
 print("                                                                  ")
 print("------------------------------------------------------------------")
 print("Ok dan nu nog een vraag. Welke opleiding heb ik gekozen op het MA?")
-print("Kies uit Software of Game development  [TYPE [software] OF [game] ")
+print("Kies uit Software of Game development  TYPE [software] OF [game]  ")
 
-
-anwser1 = input()
-if anwser1 == software:
-     print("                                                                  ")
-     print("-----------------------------------------------------------------")
-     print("Ok dus wat voor developer ben ik? Front-end of back-end?         ")
-     print("TYPE [front] OF [back]                                           ")
-
-
-     answer2 = input()
-elif anwser2 == front:
-    print("Fout!, ik ben front end Gamedeveloper")
-
-elif answer2 == back:
-    print("Fout!, ik ben front end Gamedeveloper")
-
-
-if anwser1 == Game:
-     print("                                                                  ")
-     print("-----------------------------------------------------------------")
-     print("Ok dus wat voor developer ben ik? Front-end of back-end?         ")
-     print("TYPE [front] OF [back]                                           ")
-
-     anwser3 = input()
-
-elif anwser3 == front:
-     print("Goed!, ik ben front end Gamedeveloper")
-
-
-
-elif anwser3 == back:
-     print("Fout!, ik ben front end Gamedeveloper")
-   
-
-else:
-     print("                                                                  ")
-     print("-----------------------------------------------------------------")
-     print("Nou dat was het, doei!                                           ")
+d1 = input()
     
+
+if d1 == "software":
+    print("                                                                  ")
+    print("------------------------------------------------------------------")
+    print("ok en ben ik front end of back end software developer?")
+    print("Typ [front] of [back]                        ")
+
+d2 = input()
+
+if d2 == "front" and d1 == "software":  
+    print("fout! ik ben een front end gamedeveloper")
+
+if d2 == "back" and d1 == "software":
+    print("fout! ik ben een front end gamedeveloper")
+
+if d1 == "game":
+     print("                                                                  ")
+     print("------------------------------------------------------------------")
+     print("ok en ben ik front end of back end game developer?")
+     print("Typ [front] of [back]                        ")
+
+d2 = input()
+
+if d2 == "front" and d1 == "game":
+    print("goed! ik ben front end gamedeveloper")
+ 
+if d2 == "back" and d1 == "game":
+    print("Fout! ik ben front end gamedeveloper")
 
 
 
