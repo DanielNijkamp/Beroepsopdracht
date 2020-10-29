@@ -1,0 +1,33 @@
+from microbit import *
+import speech
+import random
+
+lengteWoordArray = 3
+
+onderwerp = ["ik", "hij", "zij"]
+werkwoord = ["loopt naar", "ziet", "heeft"]
+rest = ["een burger", "een school", "een docent"]
+
+def sayTheWords1(word): 
+    print(word)
+    speech.say(word, speed=432, pitch=432, throat=432, mouth=432)
+    sleep(432)
+
+def sayTheWords2():
+    willekeurigGetal = random.randint(0, lengteWoordArray - 1)
+    display.show(willekeurigGetal)
+    sayTheWords1(onderwerp[willekeurigGetal])
+    sayTheWords1(werkwoord[willekeurigGetal])
+    sayTheWords1(rest[willekeurigGetal])
+
+while True:
+    if button_a.is_pressed():
+        display.show(Image.HAPPY)
+        sayTheWords1("wat zit je te doen")
+    elif button_b.is_pressed():
+        display.show(Image.SAD)
+        sayTheWords1("wat doe je?")
+    elif display.read_light_level() < 40:
+        sayTheWords2()
+    else:
+        display.show(Image.SQUARE)
